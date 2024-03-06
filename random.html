@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redireccionamiento Automático</title>
+<script>
+    // Función para redirigir aleatoriamente a uno de los cuatro enlaces
+    function redireccionar() {
+        // Lista de enlaces disponibles
+        var enlaces = [
+            "https://ejemplo.com/enlace1",
+            "https://ejemplo.com/enlace2",
+            "https://ejemplo.com/enlace3",
+            "https://ejemplo.com/enlace4"
+        ];
+
+        // Generar un número aleatorio entre 0 y 3
+        var indiceAleatorio = Math.floor(Math.random() * enlaces.length);
+
+        // Redirigir a la URL seleccionada
+        window.location.href = enlaces[indiceAleatorio];
+    }
+    
+    // Llamar a la función de redireccionamiento cuando se cargue la página
+    window.onload = redireccionar;
+</script>
+</head>
+<body>
+    <!-- Puedes agregar un mensaje o contenido adicional aquí si lo deseas -->
+</body>
+</html>
